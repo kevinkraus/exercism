@@ -3,8 +3,6 @@
 // convenience to get you started writing code faster.
 //
 
-export const decodedValue = ([a, b]) => {
-  return +(''.concat(COLORS.indexOf(a), COLORS.indexOf(b)));
-};
+export const decodedValue = bandArray => Number(`${COLORS.indexOf(bandArray[0])}${COLORS.indexOf(bandArray[1])}`);
 
 export const COLORS = ["black","brown","red","orange","yellow","green","blue","violet","grey","white"];
